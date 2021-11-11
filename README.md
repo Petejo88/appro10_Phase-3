@@ -5,6 +5,7 @@ Advanced Programming Project - Dressmaker Game
 This program is a game about making dressses and clothese using necessary tools you buy
 
 Classes:
+
   cloth:
     this class is used for initializing a cloth object. data members include width, length, color and fabric
     includes constractor and overloading operator '>' for comparing the area of two pieces of cloth
