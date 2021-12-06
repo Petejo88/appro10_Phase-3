@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/class.cpp" "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build/CMakeFiles/app.dir/src/class.cpp.o"
-  "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/test.cpp" "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build/CMakeFiles/app.dir/src/test.cpp.o"
+  "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp" "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles/app.dir/src/class.cpp.o"
+  "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp" "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles/app.dir/src/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

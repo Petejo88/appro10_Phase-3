@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Mobtker/Videos/Captures/ap_pro
+CMAKE_SOURCE_DIR = /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/app.dir/flags.make
 
 CMakeFiles/app.dir/src/test.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/test.cpp.o: ../src/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/test.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/test.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp
 
 CMakeFiles/app.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/test.cpp > CMakeFiles/app.dir/src/test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp > CMakeFiles/app.dir/src/test.cpp.i
 
 CMakeFiles/app.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/test.cpp -o CMakeFiles/app.dir/src/test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp -o CMakeFiles/app.dir/src/test.cpp.s
 
 CMakeFiles/app.dir/src/class.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/class.cpp.o: ../src/class.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/class.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/class.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/class.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/class.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp
 
 CMakeFiles/app.dir/src/class.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/class.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/class.cpp > CMakeFiles/app.dir/src/class.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp > CMakeFiles/app.dir/src/class.cpp.i
 
 CMakeFiles/app.dir/src/class.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/class.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/src/class.cpp -o CMakeFiles/app.dir/src/class.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp -o CMakeFiles/app.dir/src/class.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
@@ -95,7 +95,7 @@ app: CMakeFiles/app.dir/src/test.cpp.o
 app: CMakeFiles/app.dir/src/class.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Mobtker/Videos/Captures/ap_pro /mnt/c/Users/Mobtker/Videos/Captures/ap_pro /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build /mnt/c/Users/Mobtker/Videos/Captures/ap_pro/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10 /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10 /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles/app.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/app.dir/depend
 

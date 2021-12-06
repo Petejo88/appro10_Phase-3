@@ -6,6 +6,7 @@ enum color{red, green, blue, white, black, yellow}; //tarif enum baraye rang par
 enum fabric{denim, silk, cotton, lace}; //tarif enum baraye jens parcheh
 enum model{Singer, Janome, Brother, Viking}; //tarif enum baraye model charkh khayati. asami vaghei hastan
 enum type{mechanical, electronic, automated}; //tarif enum baraye noeh charkh khayati. asami vaghei hastan
+enum pattern{basketweave, brocade, checkered, chervron, damask}; //tarif enum baraye tarh parched. asami vaghei hastan
 
 class cloth //tarif class parcheh
 {
@@ -15,7 +16,9 @@ private:
     color Color; //rang
     fabric Fabric; //jens
 public: //tabeh haye set va get baraye data memeber ha va constructor va operator overloading
-    explicit cloth(float, float, color, fabric); //constructor
+    cloth();
+    cloth(float, float, color, fabric); //constructor
+    ~cloth();
     void set_width(float);
     void set_length(float);
     void set_color(color);
@@ -34,12 +37,25 @@ private:
     model Model;
     type Type;
 public: //tabeh haye set va get baraye data memeber ha va constructor
-    explicit sewingmachine(model, type); //constructor
+    sewingmachine(model, type); //constructor
+    ~sewingmachine();
     void set_model(model);
     void set_type(type);
     type get_type() const;
     model get_model() const;
 };
 
-#endif
 
+class patterned_cloth : public cloth //tarif class pharched tarhdar, ers geresfteh shode az calss parcheh
+{
+private:
+    pattern Pattern; //tarh parcheh
+public: 
+    patterned_cloth(float, float, color, fabric, pattern); 
+    ~patterned_cloth();
+    void set_pattern(pattern);
+    pattern get_pattern() const;
+};
+
+
+#endif

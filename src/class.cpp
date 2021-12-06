@@ -2,7 +2,15 @@
 #include "class.hpp"
 using namespace std;
 
-//cloth member functions
+//cloth functions implementation
+cloth::cloth() // default constructor
+{
+
+}
+cloth::~cloth() // destructor
+{
+
+}
 cloth::cloth(float w, float l, color c, fabric f) //constructor
 {
     set_width(w);
@@ -71,14 +79,18 @@ fabric cloth::get_fabric() const
     return Fabric;
 }
 ////operator overloading
-bool cloth::operator>(const cloth &c1) const
+bool cloth::operator>(const cloth &c1) const //masaha
 {
-    return (get_width()*get_length()) > (c1.get_width()*c1.get_length());
+    return ((width*length) > (c1.width*c1.length));
 }
 
 
 
-//sewingmachine member functions
+//sewingmachine functions implementation
+sewingmachine::~sewingmachine() // destructor
+{
+
+}
 sewingmachine::sewingmachine(model m, type t) //constructor
 {
     set_model(m);
@@ -127,4 +139,43 @@ type sewingmachine::get_type() const
 model sewingmachine::get_model() const
 {
     return Model;
+}
+
+
+
+// patterned_cloth functions implementation
+patterned_cloth::~patterned_cloth() // destructor
+{
+
+}
+patterned_cloth::patterned_cloth(float w, float l, color c, fabric f, pattern p) // constructor
+{
+    set_width(w);
+    set_length(l);
+    set_color(c);
+    set_fabric(f);
+    set_pattern(p);
+}
+//// set functions
+void patterned_cloth::set_pattern(pattern p)
+{
+    bool ispattern = false;
+    int i;
+    for (i = basketweave; i <= damask; i++)
+    {
+        if(p == i)
+        {
+            Pattern = p;
+            ispattern = true;
+        }
+    }
+    if(!ispattern)
+    {
+        cout << "pattern unavailable" << endl;
+    }
+}
+////get functions
+pattern patterned_cloth::get_pattern() const
+{
+    return Pattern;
 }

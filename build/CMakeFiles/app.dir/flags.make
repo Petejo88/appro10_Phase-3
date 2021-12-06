@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/Mobtker/Videos/Captures/ap_pro/include 
+CXX_INCLUDES = -I/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/include 
 
