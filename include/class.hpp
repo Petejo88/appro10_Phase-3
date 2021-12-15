@@ -45,7 +45,7 @@ public: //tabeh haye set va get baraye data memeber ha va constructor
 };
 
 
-class patterned_cloth : public cloth //tarif class pharched tarhdar, ers geresfteh shode az calss parcheh
+class patterned_cloth: public cloth //tarif class pharched tarhdar, ers geresfteh shode az calss parcheh
 {
 private:
     std::string Pattern; //tarh parcheh
