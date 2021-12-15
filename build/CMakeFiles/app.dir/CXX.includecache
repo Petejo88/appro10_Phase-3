@@ -10,8 +10,26 @@
 iostream
 -
 
+/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp
+iostream
+-
+vector
+-
+string
+-
+stdexcept
+-
+class.hpp
+/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.hpp
+
 /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp
 iostream
+-
+vector
+-
+string
+-
+stdexcept
 -
 class.hpp
 /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.hpp

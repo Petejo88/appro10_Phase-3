@@ -60,28 +60,28 @@ include CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/test.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/test.cpp.o: ../src/test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/test.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/test.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp
 
 CMakeFiles/app.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp > CMakeFiles/app.dir/src/test.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp > CMakeFiles/app.dir/src/test.cpp.i
 
 CMakeFiles/app.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp -o CMakeFiles/app.dir/src/test.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp -o CMakeFiles/app.dir/src/test.cpp.s
 
 CMakeFiles/app.dir/src/class.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/class.cpp.o: ../src/class.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/class.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/class.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp
+	/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/class.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp
 
 CMakeFiles/app.dir/src/class.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/class.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp > CMakeFiles/app.dir/src/class.cpp.i
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp > CMakeFiles/app.dir/src/class.cpp.i
 
 CMakeFiles/app.dir/src/class.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/class.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp -o CMakeFiles/app.dir/src/class.cpp.s
+	/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp -o CMakeFiles/app.dir/src/class.cpp.s
 
 # Object files for target app
 app_OBJECTS = \

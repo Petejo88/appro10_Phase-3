@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build",
+  "command": "/bin/c++   -I/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/include  -g   -std=gnu++11 -o CMakeFiles/app.dir/src/test.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp",
+  "file": "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/test.cpp"
+},
+{
+  "directory": "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build",
+  "command": "/bin/c++   -I/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/include  -g   -std=gnu++11 -o CMakeFiles/app.dir/src/class.cpp.o -c /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp",
+  "file": "/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/src/class.cpp"
+}
+]

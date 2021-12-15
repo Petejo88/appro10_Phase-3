@@ -1,4 +1,7 @@
 #include <iostream>
+#include <vector>
+#include <string>
+#include <stdexcept>
 #include "class.hpp"
 using namespace std;
 
@@ -11,12 +14,43 @@ cloth::~cloth() // destructor
 {
 
 }
-cloth::cloth(float w, float l, color c, fabric f) //constructor
+cloth::cloth(float w, float l, string c, string f) //constructor
 {
-    set_width(w);
-    set_length(l);
-    set_color(c);
-    set_fabric(f);
+    try
+    {
+        set_width(w);
+    }
+    catch(const invalid_argument& e)
+    {
+        cerr << e.what() << endl;
+    }
+    
+    try
+    {
+        set_length(l);
+    }
+    catch(const invalid_argument& e)
+    {
+        cerr << e.what() << endl;
+    }
+    
+    try
+    {
+        set_color(c);
+    }
+    catch(const invalid_argument& e)
+    {
+        cerr << e.what() << endl;
+    }
+    
+    try
+    {
+        set_fabric(f);
+    }
+    catch(const invalid_argument& e)
+    {
+        std::cerr << e.what() << endl;
+    }
 }
 ////set functions
 void cloth::set_width(float w)
@@ -27,39 +61,29 @@ void cloth::set_length(float l)
 {
     length = l;
 }
-void cloth::set_color(color c)
+void cloth::set_color(string c)
 {
-    bool iscolor = false;
-    int i;
-    for ( i = red; i <= yellow; i++)
+    for (auto item: colors)
     {
-        if(c == i)
+        if(c == item)
         {
             Color = c;
-            iscolor = true;
+            break;
         }
     }
-    if(!iscolor)
-    {
-        cout << "color unavailable" << endl;
-    }
+    throw invalid_argument("color unavailable");
 }
-void cloth::set_fabric(fabric f)
+void cloth::set_fabric(string f)
 {
-    bool isfabric = false;
-    int i;
-    for (i = denim; i <= lace; i++)
+    for (auto item:fabrics)
     {
-        if(f == i)
+        if(f == item)
         {
             Fabric = f;
-            isfabric = true;
+            break;
         }
     }
-    if(!isfabric)
-    {
-        cout << "fabric unavailable" << endl;
-    }
+    throw invalid_argument("fabric unavailable");
 }
 ////get functions
 float cloth::get_width() const
@@ -70,11 +94,11 @@ float cloth::get_length() const
 {
     return length;
 }
-color cloth::get_color() const
+string cloth::get_color() const
 {
     return Color;
 }
-fabric cloth::get_fabric() const
+string cloth::get_fabric() const
 {
     return Fabric;
 }
@@ -91,52 +115,57 @@ sewingmachine::~sewingmachine() // destructor
 {
 
 }
-sewingmachine::sewingmachine(model m, type t) //constructor
+sewingmachine::sewingmachine(string m, string t) //constructor
 {
-    set_model(m);
-    set_type(t);
+    try
+    {
+        set_model(m);
+    }
+    catch(const invalid_argument& e)
+    {
+        std::cerr << e.what() << endl;
+    }
+    
+    try
+    {
+        set_type(t);
+    }
+    catch(const invalid_argument& e)
+    {
+        std::cerr << e.what() << endl;
+    }
 }
 //// set functions
-void sewingmachine::set_model(model m)
+void sewingmachine::set_model(string m)
 {
-    bool ismodel = false;
-    int i;
-    for (i = Singer; i <= Viking; i++)
+    for (auto item: models)
     {
-        if(m == i)
+        if(m == item)
         {
             Model = m;
-            ismodel = true;
+            break;
         }
     }
-    if(!ismodel)
-    {
-        cout << "model unavailable" << endl;
-    }
+    throw invalid_argument("model unavailable");
 }
-void sewingmachine::set_type(type t)
+void sewingmachine::set_type(string t)
 {
-    bool istype = false;
-    int i;
-    for (i = mechanical; i <= automated; i++)
+    for (auto item: types)
     {
-        if(t == i)
+        if(t == item)
         {
             Type = t;
-            istype = true;
+            break;
         }
     }
-    if(!istype)
-    {
-        cout << "type unavailable" << endl;
-    }
+    throw invalid_argument("type unavailable");
 }
 ////get functions
-type sewingmachine::get_type() const
+string sewingmachine::get_type() const
 {
     return Type;
 }
-model sewingmachine::get_model() const
+string sewingmachine::get_model() const
 {
     return Model;
 }
@@ -148,34 +177,68 @@ patterned_cloth::~patterned_cloth() // destructor
 {
 
 }
-patterned_cloth::patterned_cloth(float w, float l, color c, fabric f, pattern p) // constructor
+patterned_cloth::patterned_cloth(float w, float l, string c, string f, string p) // constructor
 {
-    set_width(w);
-    set_length(l);
-    set_color(c);
-    set_fabric(f);
-    set_pattern(p);
+    try
+    {
+        set_width(w);
+    }
+    catch(const invalid_argument& e)
+    {
+        cerr << e.what() << endl;
+    }
+    
+    try
+    {
+        set_length(l);
+    }
+    catch(const invalid_argument& e)
+    {
+        cerr << e.what() << endl;
+    }
+    
+    try
+    {
+        set_color(c);
+    }
+    catch(const invalid_argument& e)
+    {
+        cerr << e.what() << endl;
+    }
+    
+    try
+    {
+        set_fabric(f);
+    }
+    catch(const invalid_argument& e)
+    {
+        std::cerr << e.what() << endl;
+    }
+
+    try
+    {
+        set_pattern(p);
+    }
+    catch(const invalid_argument& e)
+    {
+        std::cerr << e.what() << endl;
+    }
 }
 //// set functions
-void patterned_cloth::set_pattern(pattern p)
+void patterned_cloth::set_pattern(string p)
 {
-    bool ispattern = false;
-    int i;
-    for (i = basketweave; i <= damask; i++)
+    for (auto item: patterns)
     {
-        if(p == i)
+        if(p == item)
         {
             Pattern = p;
-            ispattern = true;
+            break;
         }
     }
-    if(!ispattern)
-    {
-        cout << "pattern unavailable" << endl;
-    }
+    throw invalid_argument("pattern unavailable");
 }
 ////get functions
-pattern patterned_cloth::get_pattern() const
+string patterned_cloth::get_pattern() const
 {
     return Pattern;
 }
