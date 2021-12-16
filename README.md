@@ -1,6 +1,6 @@
 Advanced Programming Project - Dressmaker Game
 
-[Phase #2 Update]
+[Phase #3 Update]
 
 This program is a game about making dressses and clothese using necessary tools you buy
 
