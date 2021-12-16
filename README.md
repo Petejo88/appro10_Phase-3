@@ -3,6 +3,7 @@ Advanced Programming Project - Dressmaker Game
 [Phase #2 Update]
 
 This program is a game about making dressses and clothese using necessary tools you buy
+
 (Special Phase#3 Update Note: vectors of strings were replaced by enums and exceptions were added for when string data memebers are falsely declared) 
 
 Classes:
