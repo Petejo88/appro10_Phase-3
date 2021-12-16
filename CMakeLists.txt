@@ -6,4 +6,4 @@ cmake_minimum_required(VERSION 3.0)
 
 include_directories(include/)
 
-add_executable(app src/test.cpp src/class.cpp)
+add_executable(appro10 src/test.cpp src/class.cpp)

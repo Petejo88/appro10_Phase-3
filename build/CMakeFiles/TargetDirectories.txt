@@ -1,3 +1,3 @@
 /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles/app.dir
+/mnt/c/Users/Mobtker/Videos/Captures/ap_pro10/build/CMakeFiles/appro10.dir

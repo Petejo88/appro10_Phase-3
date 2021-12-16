@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named app
+# Target rules for targets named appro10
 
 # Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 app
-.PHONY : app
+appro10: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 appro10
+.PHONY : appro10
 
 # fast build rule for target.
-app/fast:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-.PHONY : app/fast
+appro10/fast:
+	$(MAKE) -f CMakeFiles/appro10.dir/build.make CMakeFiles/appro10.dir/build
+.PHONY : appro10/fast
 
 src/class.o: src/class.cpp.o
 
@@ -129,7 +129,7 @@ src/class.o: src/class.cpp.o
 
 # target to build an object file
 src/class.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/class.cpp.o
+	$(MAKE) -f CMakeFiles/appro10.dir/build.make CMakeFiles/appro10.dir/src/class.cpp.o
 .PHONY : src/class.cpp.o
 
 src/class.i: src/class.cpp.i
@@ -138,7 +138,7 @@ src/class.i: src/class.cpp.i
 
 # target to preprocess a source file
 src/class.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/class.cpp.i
+	$(MAKE) -f CMakeFiles/appro10.dir/build.make CMakeFiles/appro10.dir/src/class.cpp.i
 .PHONY : src/class.cpp.i
 
 src/class.s: src/class.cpp.s
@@ -147,7 +147,7 @@ src/class.s: src/class.cpp.s
 
 # target to generate assembly for a file
 src/class.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/class.cpp.s
+	$(MAKE) -f CMakeFiles/appro10.dir/build.make CMakeFiles/appro10.dir/src/class.cpp.s
 .PHONY : src/class.cpp.s
 
 src/test.o: src/test.cpp.o
@@ -156,7 +156,7 @@ src/test.o: src/test.cpp.o
 
 # target to build an object file
 src/test.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/test.cpp.o
+	$(MAKE) -f CMakeFiles/appro10.dir/build.make CMakeFiles/appro10.dir/src/test.cpp.o
 .PHONY : src/test.cpp.o
 
 src/test.i: src/test.cpp.i
@@ -165,7 +165,7 @@ src/test.i: src/test.cpp.i
 
 # target to preprocess a source file
 src/test.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/test.cpp.i
+	$(MAKE) -f CMakeFiles/appro10.dir/build.make CMakeFiles/appro10.dir/src/test.cpp.i
 .PHONY : src/test.cpp.i
 
 src/test.s: src/test.cpp.s
@@ -174,7 +174,7 @@ src/test.s: src/test.cpp.s
 
 # target to generate assembly for a file
 src/test.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/test.cpp.s
+	$(MAKE) -f CMakeFiles/appro10.dir/build.make CMakeFiles/appro10.dir/src/test.cpp.s
 .PHONY : src/test.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... app"
+	@echo "... appro10"
 	@echo "... src/class.o"
 	@echo "... src/class.i"
 	@echo "... src/class.s"

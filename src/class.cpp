@@ -16,23 +16,9 @@ cloth::~cloth() // destructor
 }
 cloth::cloth(float w, float l, string c, string f) //constructor
 {
-    try
-    {
-        set_width(w);
-    }
-    catch(const invalid_argument& e)
-    {
-        cerr << e.what() << endl;
-    }
-    
-    try
-    {
-        set_length(l);
-    }
-    catch(const invalid_argument& e)
-    {
-        cerr << e.what() << endl;
-    }
+
+    set_width(w);
+    set_length(l);
     
     try
     {
@@ -68,7 +54,7 @@ void cloth::set_color(string c)
         if(c == item)
         {
             Color = c;
-            break;
+            return;
         }
     }
     throw invalid_argument("color unavailable");
@@ -80,7 +66,7 @@ void cloth::set_fabric(string f)
         if(f == item)
         {
             Fabric = f;
-            break;
+            return;
         }
     }
     throw invalid_argument("fabric unavailable");
@@ -143,7 +129,7 @@ void sewingmachine::set_model(string m)
         if(m == item)
         {
             Model = m;
-            break;
+            return;
         }
     }
     throw invalid_argument("model unavailable");
@@ -155,7 +141,7 @@ void sewingmachine::set_type(string t)
         if(t == item)
         {
             Type = t;
-            break;
+            return;
         }
     }
     throw invalid_argument("type unavailable");
@@ -179,24 +165,10 @@ patterned_cloth::~patterned_cloth() // destructor
 }
 patterned_cloth::patterned_cloth(float w, float l, string c, string f, string p) // constructor
 {
-    try
-    {
-        set_width(w);
-    }
-    catch(const invalid_argument& e)
-    {
-        cerr << e.what() << endl;
-    }
-    
-    try
-    {
-        set_length(l);
-    }
-    catch(const invalid_argument& e)
-    {
-        cerr << e.what() << endl;
-    }
-    
+
+    set_width(w);
+    set_length(l);
+
     try
     {
         set_color(c);
@@ -232,7 +204,7 @@ void patterned_cloth::set_pattern(string p)
         if(p == item)
         {
             Pattern = p;
-            break;
+            return;
         }
     }
     throw invalid_argument("pattern unavailable");
