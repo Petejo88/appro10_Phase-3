@@ -2,11 +2,7 @@
 
 #ifndef CLASS_HPP
 #define CLASS_HPP
-std::vector <std::string> colors = {"red", "green", "blue", "white", "black", "yellow"}; //tarif vector baraye rang parcheh
-std::vector <std::string> fabrics = {"denim", "silk", "cotton", "lace"}; //tarif vector baraye jens parcheh
-std::vector <std::string> models = {"Singer", "Janome", "Brother", "Viking"}; //tarif vector baraye model charkh khayati. asami vaghei hastan
-std::vector <std::string> types = {"mechanical", "electronic", "automated"}; //tarif vector baraye noeh charkh khayati. asami vaghei hastan
-std::vector <std::string> patterns = {"basketweave", "brocade", "checkered", "chevron", "damask"}; //tarif vectorbaraye tarh parched. asami vaghei hastan
+
 class cloth //tarif class parcheh
 {
 private:
@@ -55,6 +51,5 @@ public:
     void set_pattern(std::string);
     std::string get_pattern() const;
 };
-
 
 #endif

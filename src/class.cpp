@@ -5,6 +5,12 @@
 #include "class.hpp"
 using namespace std;
 
+std::vector <std::string> colors = {"red", "green", "blue", "white", "black", "yellow"}; //tarif vector baraye rang parcheh
+std::vector <std::string> fabrics = {"denim", "silk", "cotton", "lace"}; //tarif vector baraye jens parcheh
+std::vector <std::string> models = {"Singer", "Janome", "Brother", "Viking"}; //tarif vector baraye model charkh khayati. asami vaghei hastan
+std::vector <std::string> types = {"mechanical", "electronic", "automated"}; //tarif vector baraye noeh charkh khayati. asami vaghei hastan
+std::vector <std::string> patterns = {"basketweave", "brocade", "checkered", "chevron", "damask"}; //tarif vectorbaraye tarh parched. asami vaghei hastan
+
 //cloth functions implementation
 cloth::cloth() // default constructor
 {
@@ -20,7 +26,7 @@ cloth::cloth(float w, float l, string c, string f) //constructor
     set_width(w);
     set_length(l);
     
-    try
+    try //dar in class va baghiye tamam moteghaer hayi ke ba vector tarif shodan ro ba exception chek mikonim ke dorost bashan
     {
         set_color(c);
     }
@@ -57,8 +63,8 @@ void cloth::set_color(string c)
             return;
         }
     }
-    throw invalid_argument("color unavailable");
-}
+    throw invalid_argument("color unavailable"); //dar in clss va baghiye baraye tamam moteghayer hayi ke ba 
+}                                                //vector tarif shodan exception throw mikonim
 void cloth::set_fabric(string f)
 {
     for (auto item:fabrics)

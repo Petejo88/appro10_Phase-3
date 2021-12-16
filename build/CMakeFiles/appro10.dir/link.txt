@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/appro10.dir/src/test.cpp.o CMakeFiles/appro10.dir/src/class.cpp.o  -o appro10 
+/bin/c++    -rdynamic CMakeFiles/appro10.dir/src/test.cpp.o CMakeFiles/appro10.dir/src/class.cpp.o  -o appro10 
